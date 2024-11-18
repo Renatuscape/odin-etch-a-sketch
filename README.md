@@ -1,2 +1,3 @@
-# odin-etch-a-sketch
-The Odin Project Foundations: an Etch-A-Sketch created in JavaScript.
+# Etch-A-Sketch
+## [From The Odin Project Foundations](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+
