@@ -57,21 +57,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: rgb(226, 188, 137);
+  overflow: hidden;
 }
 
 .grid-item {
   height: 50px;
   width: 50px;
-  border: 2px solid #5f968e;
+  /* border: 2px solid #5f968e; */
   text-align: center;
   border-radius: 0;
-}
-
-.grid-item:hover {
-  background-color: rgb(113, 184, 163);
-}
-
-.grid-item.active {
   background-color: #1b524b;
-  border: 1px solid #5f968e44;
 }
