@@ -13,12 +13,16 @@ function toggleErase() {
 function makeRows(rows, cols) {
   // Clear existing grid items
   container.innerHTML = '';
+  let cellWidth = 800 / cols;
+  let cellHeight = 800 / rows;
 
   // Create new grid items
   for (let i = 0; i < (rows * cols); i++) {
     const cell = document.createElement("div");
     cell.className = "grid-item";
     cell.style.opacity = "0";
+    cell.style.width = cellWidth + "px";
+    cell.style.height = cellHeight + "px";
 
     // Add click event listener
     cell.addEventListener('mouseover', function () {
@@ -43,4 +47,4 @@ function makeRows(rows, cols) {
   }
 }
 
-makeRows(16, 16);
+makeRows(64, 64);

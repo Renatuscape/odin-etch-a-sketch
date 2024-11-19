@@ -61,9 +61,8 @@ body {
 }
 
 .grid-item {
-  height: 50px;
-  width: 50px;
-  /* border: 2px solid #5f968e; */
+  min-height: 3px;
+  min-width: 3px;
   text-align: center;
   border-radius: 0;
   background-color: #1b524b;
