@@ -16,8 +16,26 @@ function toggleErase() {
 }
 
 function resetGrid() {
-  let gridSize = prompt("Please enter grid resolution", 16);
-  // Pass both rows and columns (assuming square grid)
+  let validInput = false;
+  let gridSize;
+
+  while (!validInput) {
+    gridSize = prompt("Please enter grid resolution (1-100)", 64);
+
+    // Handle cancel button
+    if (gridSize === null) {
+      return;  // Exit function if user cancels
+    }
+
+    gridSize = parseInt(gridSize);
+
+    if (!isNaN(gridSize) && gridSize > 0 && gridSize <= 100) {
+      validInput = true;
+    } else {
+      alert("Please enter a valid number between 1 and 100");
+    }
+  }
+
   makeRows(gridSize, gridSize);
 }
 
