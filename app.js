@@ -1,13 +1,24 @@
 const container = document.getElementById("container");
 const eraseButton = document.getElementById("erase")
+const resetButton = document.getElementById("reset");
+
 let erasing = false;
 
 eraseButton.value = "Toggle Erase";
 eraseButton.onclick = toggleErase;
 
+resetButton.value = "Reset Grid";
+resetButton.onclick = resetGrid;
+
 function toggleErase() {
   erasing = !erasing;
   eraseButton.textContent = erasing ? "Erase Mode" : "Drawing Mode";
+}
+
+function resetGrid() {
+  let gridSize = prompt("Please enter grid resolution", 16);
+  // Pass both rows and columns (assuming square grid)
+  makeRows(gridSize, gridSize);
 }
 
 function makeRows(rows, cols) {
