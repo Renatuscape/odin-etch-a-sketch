@@ -15,7 +15,7 @@ function buildSettings() {
         settingsContainer.appendChild(button);
 
         button.onclick = () => {
-            window.brushStrength = button.title;
+            window.brushStrength = parseFloat(value);
         }
     }
 }
