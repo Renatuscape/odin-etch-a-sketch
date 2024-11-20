@@ -69,11 +69,34 @@ body {
   background-color: #1b524b;
 }
 
-#brush-settings .brush-opacity-button{
+#brush-settings {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#brush-settings .brush-opacity-button {
   margin: 5px;
   height: 25px;
   width: 25px;
   max-width: 25px;
   max-height: 25px;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+#brush-settings .brush-opacity-button:hover {
+  border: 2px solid #ac752e;
+}
+
+.brush-button-fill {
+  height: 100%;
+  width: 100%;
   background-color: #1b524b;
+}
+
+#brush-settings .brush-opacity-button.active {
+  border: 2px solid #facd92;
 }
