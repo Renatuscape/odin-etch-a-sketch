@@ -67,3 +67,12 @@ body {
   border-radius: 0;
   background-color: #1b524b;
 }
+
+#brush-settings .brush-opacity-button{
+  margin: 5px;
+  height: 25px;
+  width: 25px;
+  max-width: 25px;
+  max-height: 25px;
+  background-color: #1b524b;
+}

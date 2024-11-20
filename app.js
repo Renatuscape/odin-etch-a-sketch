@@ -60,13 +60,13 @@ function makeRows(rows, cols) {
       if (!erasing) {
         // Drawing mode - increase opacity, but only if not fully opaque
         if (currentOpacity < 1) {
-          currentOpacity = Math.min(1, currentOpacity + 0.1);
+          currentOpacity = Math.min(1, currentOpacity + window.brushStrength );
           cell.style.opacity = currentOpacity.toFixed(1);
         }
       } else {
         // Erase mode - decrease opacity
         if (currentOpacity > 0) {
-          currentOpacity = Math.max(0, currentOpacity - 0.1);
+          currentOpacity = Math.max(0, currentOpacity - window.brushStrength );
           cell.style.opacity = currentOpacity.toFixed(1);
         }
       }
